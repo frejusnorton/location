@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('nom');
             $table->string('disponiblite')->default(1);
             $table->string('numero_serie');
+            $table->unsignedBigInteger('type_article_id');
             $table->string('image_url');
             $table->timestamps();
         });

@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('piece_identites', function (Blueprint $table) {
             $table->id();
             $table->string('piece_identite');
-            $table->string('numero_piece_identite');
+            $table->string('numero_piece_identite')->unique();
             $table->timestamps();
         });
     }

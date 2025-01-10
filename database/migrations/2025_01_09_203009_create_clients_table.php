@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('clients', function (Blueprint $table) {
             $table->id();
             $table->string('nom');
+            $table->string('sexe');
             $table->string('prenom');
             $table->date('date_naissance');
             $table->string('lieu_naissance');
